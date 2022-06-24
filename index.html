@@ -1,0 +1,189 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Asset/CSS/style.css" />
+    <title>Form validation</title>
+  </head>
+  <body>
+    <!--! form validation -->
+
+    <div class="container">
+      <form id="form">
+        <div class="title">Get Started</div>
+
+        <!-- ! username goes here -->
+        <div>
+          <label for="username">Username:</label>
+          <img src="./Asset/IMAGES/user-6769.png" alt="" class="img" />
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Username:"
+            onkeyup="validateUser()"
+          />
+          <img
+            src="./Asset/IMAGES/warning-sign-9772.png"
+            alt=""
+            class="warning one failure"
+          />
+          <img
+            src="./Asset/IMAGES/check-symbol-4794.png"
+            alt=""
+            class="check one success"
+          />
+        </div>
+        <div id="userError" class="error-block"></div>
+
+        <!-- ! password goes here -->
+        <div>
+          <label for="password">Password:</label>
+          <img src="./Asset/IMAGES/user-6769.png" alt="" class="img" />
+          <input
+            type="password"
+            name="username"
+            id="password"
+            placeholder="Password:"
+          />
+          <img
+            src="./Asset/IMAGES/warning-sign-9772.png"
+            alt=""
+            class="warning one failure"
+          />
+          <img
+            src="./Asset/IMAGES/check-symbol-4794.png"
+            alt=""
+            class="check one success"
+          />
+        </div>
+        <div id="passwordError" class="error-block"></div>
+
+        <!-- ! Fullname goes here -->
+        <div>
+          <label for="fullname">Full name:</label>
+          <img src="./Asset/IMAGES/user-3296.png" alt="" class="img" />
+          <input
+            type="text"
+            name="Full Name"
+            id="fullname"
+            placeholder="Full name:"
+          />
+          <img
+            src="./Asset/IMAGES/warning-sign-9772.png"
+            alt=""
+            class="warning one failure"
+          />
+          <img
+            src="./Asset/IMAGES/check-symbol-4794.png"
+            alt=""
+            class="check one success"
+          />
+        </div>
+        <div id="FullnameError" class="error-block"></div>
+
+        <!-- ! Email goes here -->
+        <div>
+          <label for="email">Email address:</label>
+          <img src="./Asset/IMAGES/mail-5722.png" alt="email" class="img" />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter Email:"
+          />
+          <img
+            src="./Asset/IMAGES/warning-sign-9772.png"
+            alt=""
+            class="warning one failure"
+          />
+          <img
+            src="./Asset/IMAGES/check-symbol-4794.png"
+            alt=""
+            class="check one success"
+          />
+        </div>
+        <div id="emailError" class="error-block"></div>
+
+        <!-- ! phonenumber goes here -->
+        <div>
+          <label for="phonenumber">Phone number: </label>
+          <img src="./Asset/IMAGES/phone-5967 (2).png" alt="" class="img" />
+          <input
+            type="number"
+            name="phone number"
+            id="phonenumber"
+            placeholder="Enter Phone Number:"
+          />
+          <img
+            src="./Asset/IMAGES/warning-sign-9772.png"
+            alt=""
+            class="warning one failure"
+          />
+          <img
+            src="./Asset/IMAGES/check-symbol-4794.png"
+            alt=""
+            class="check one success"
+          />
+        </div>
+        <div id="phoneError" class="error-block"></div>
+
+        <!-- ! Year of birth goes here -->
+        <div>
+          <label for="year">Year of birth</label>
+          <img
+            src="./Asset/IMAGES/hotel-booking-10291.png"
+            alt=""
+            class="img"
+          />
+          <input
+            type="year"
+            name="year of birth"
+            id="year"
+            placeholder="D O B"
+          />
+          <img
+            src="./Asset/IMAGES/warning-sign-9772.png"
+            alt=""
+            class="warning one failure"
+          />
+          <img
+            src="./Asset/IMAGES/check-symbol-4794.png"
+            alt=""
+            class="check one success"
+          />
+        </div>
+        <div id="dobError" class="error-block"></div>
+
+        <!-- ! Biography goes here -->
+        <div>
+          <label for="bio">Bio</label>
+          <textarea
+            name="bio"
+            id="bio"
+            cols="30"
+            rows="10"
+            placeholder="Tell Us More About You!"
+          ></textarea
+          ><br />
+          <img
+            src="./Asset/IMAGES/warning-sign-9772.png"
+            alt=""
+            class="warning three failure"
+          />
+          <img
+            src="./Asset/IMAGES/check-symbol-4794.png"
+            alt=""
+            class="check three success"
+          />
+        </div>
+
+        <button type="submit" id="validateForm">submit</button>
+      
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

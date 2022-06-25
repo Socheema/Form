@@ -28,7 +28,9 @@ form {
   /* margin-bottom: 20px; */
   text-align: center;
   color: #4c1085;
-  background: linear-gradient(120deg,#4c1085,#85107b)
+  background: linear-gradient(120deg,#4c1085,#85107b);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   text-shadow: 4px 4px 8px rgba(0, 0, 0 .5);
 }
 
@@ -48,7 +50,7 @@ form > div > input {
 form div input:hover{
     background-color: #4c1085;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 

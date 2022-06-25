@@ -9,6 +9,7 @@
 
 body {
   font-family: sans-serif;
+  overflow-X: hidden;
 }
 
 /* ! Style rules for form section */
@@ -27,6 +28,7 @@ form {
   /* margin-bottom: 20px; */
   text-align: center;
   color: #4c1085;
+  background: linear-gradient(120deg,#4c1085,#85107b)
   text-shadow: 4px 4px 8px rgba(0, 0, 0 .5);
 }
 
